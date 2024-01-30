@@ -1,20 +1,26 @@
-/* styles.css */
-
 /* Estilos generales */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Belleza', sans-serif;
     color: #333;
+    padding-top: 56px; /* Ajuste para el encabezado fijo */
+}
+
+/* Estilos para el logo en el encabezado */
+#header-logo {
+    max-width: 100px;
 }
 
 /* Estilos específicos para el formulario de contacto */
 #contact-form {
-    background-color: #f8f9fa;
+    background-color: #cde0f3;
     padding: 30px 15px;
     border-radius: 10px;
 }
 
 #contact-form h2 {
     margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #contact-form form {
@@ -25,6 +31,7 @@ body {
 #contact-form label {
     display: block;
     margin-bottom: 8px;
+    font-size: 16px;
 }
 
 #contact-form input,
@@ -34,6 +41,7 @@ body {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 #contact-form button {
@@ -47,4 +55,16 @@ body {
 
 #contact-form button:hover {
     background-color: #0056b3;
+}
+
+#whatsapp-sticky {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#whatsapp-sticky img {
+    max-width: 60px;
+    height: auto;
 }
