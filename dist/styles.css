@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* Agrega las animaciones aquí */
+a {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0056b3;
+}
+
+#services-section .col-md-6 img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#services-section .col-md-6 img:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes rotateContinuous {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#services-section .col-md-6 img:hover {
+  animation: rotateContinuous 5s linear infinite;
+}
+
+#contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+#services-section .col-md-6 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#services-section .col-md-6:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes rotateContinuous {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#advanced-animation {
+  animation: rotateContinuous 5s linear infinite;
+}
+
+#contact-form {
+  background-color: #f8f9fa;
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0062cc;
+}
+
+/* Agrega las animaciones aquí */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+/* Estilos generales */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+/* Resto de los estilos... */
+/* Estilos para la animación de zoom en los servicios destacados */
+#services-section .col-md-6:hover {
+  animation: zoomIn 0.3s ease-in-out;
+  transform-origin: center bottom;
+}
+
+/*# sourceMappingURL=styles.css.map */
