@@ -17,19 +17,14 @@ a {
     color: $color-primary-dark;
   }
 }
-// Animación de entrada para los servicios destacados
-#services-section .col-md-6 img {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-
-  &:hover {
-    opacity: 1;
-    transform: translateY(0);
+#services-section {
+  .col-md-6 {
+    img {
+      animation: rotateContinuous 5s linear infinite; // 5 segundos de duración, lineal, repetición infinita
+    }
   }
 }
 
-// Animación de giro continuo para las imágenes de los servicios
 @keyframes rotateContinuous {
   from {
     transform: rotate(0deg);
@@ -39,9 +34,6 @@ a {
   }
 }
 
-#services-section .col-md-6 img:hover {
-  animation: rotateContinuous 5s linear infinite;
-}
 // Animación de fondo para el botón de enviar en el formulario de contacto
 #contact-form button {
   background-color: $color-primary;

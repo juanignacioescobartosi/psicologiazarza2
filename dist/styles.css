@@ -9,13 +9,7 @@ a:hover {
 }
 
 #services-section .col-md-6 img {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-#services-section .col-md-6 img:hover {
-  opacity: 1;
-  transform: translateY(0);
+  animation: rotateContinuous 5s linear infinite;
 }
 
 @keyframes rotateContinuous {
@@ -26,10 +20,6 @@ a:hover {
     transform: rotate(360deg);
   }
 }
-#services-section .col-md-6 img:hover {
-  animation: rotateContinuous 5s linear infinite;
-}
-
 #contact-form button {
   background-color: #007bff;
   color: #fff;
